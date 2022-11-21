@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorias UPSLP</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"-->
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" action="guardarDatos.php">
+                <div>
+                    <fieldset>
+                        <h3>Semestre anterior</h3>
+                        <h2> Análisis del semestre anterior</h2>
+                        <p class="desc"></p>
+                        <div class="fieldset-content">
+                            <div class="form-row">
+
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label class="form-label">Nombre del estudiante</label>
+                                        <input type="text" name="nombre" id="nombre" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label class="form-label">Matrícula</label>
+                                        <input type="text" name="matricula" id="matricula" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Carrera</label>
+                                        <input type="text" name="carrera" id="carrera" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Semestre</label>
+                                        <input type="text" name="semestre" id="semestre" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Ciclo escolar</label>
+                                        <input type="text" name="ciclo" id="ciclo" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <br><p class="desc">Evaluación de la situación académica del semestre anterior</p>
+                                <label class="form-label">Materias</label>
+                                        <input type="number" name="no_materias" id="no_materias" placeholder="Máximo 7 materias" />
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        
+                                        <label class="form-label">Nombre</label>
+                                        <input type="text" name="materia1" id="materia1" placeholder="Materia 1" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia2" id="materia2" placeholder="Materia 2"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia3" id="materia3" placeholder="Materia 3"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia4" id="materia4" placeholder="Materia 4"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia5" id="materia5" placeholder="Materia 5"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia6" id="materia6" placeholder="Materia 6"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia7" id="materia7" placeholder="Materia 7"/>
+                                        <span class="text-input"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Calificación final obtenida</label>
+                                        <input type="number" name="materia1_cal" id="materia1_cal" />
+                                        <span class="text-input"></span>
+                                        <input type="number" name="materia2_cal" id="materia2_cal" />
+                                        <span class="text-input"></span>
+                                        <input type="number" name="materia3_cal" id="materia3_cal" />
+                                        <span class="text-input"></span>
+                                        <input type="number" name="materia4_cal" id="materia4_cal" />
+                                        <span class="text-input"></span>
+                                        <input type="number" name="materia5_cal" id="materia5_cal" />
+                                        <span class="text-input"></span>
+                                        <input type="number" name="materia6_cal" id="materia6_cal" />
+                                        <span class="text-input"></span>
+                                        <input type="number" name="materia7_cal" id="materia7_cal" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                        <label class="form-label">Grado de dificultad</label>
+                                        <input type="text" name="materia1_dif" id="materia1_dif" placeholder="Difícil / Normal / Fácil" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia2_dif" id="materia2_dif" placeholder="Difícil / Normal / Fácil" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia3_dif" id="materia3_dif" placeholder="Difícil / Normal / Fácil" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia4_dif" id="materia4_dif" placeholder="Difícil / Normal / Fácil" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia5_dif" id="materia5_dif" placeholder="Difícil / Normal / Fácil" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia6_dif" id="materia6_dif" placeholder="Difícil / Normal / Fácil" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia7_dif" id="materia7_dif" placeholder="Difícil / Normal / Fácil"/>
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Preferencia</label>
+                                        <input type="text" name="materia1_pref" id="materia1_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia2_pref" id="materia2_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia3_pref" id="materia3_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia4_pref" id="materia4_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia5_pref" id="materia5_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia6_pref" id="materia6_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia7_pref" id="materia7_pref" placeholder="Alta / Normal / Baja"/>
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Tiempo dedicado</label>
+                                        <input type="text" name="materia1_tiempo" id="materia1_tiempo" placeholder="Suficiente / Normal / Poco"/>
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia2_tiempo" id="materia2_tiempo" placeholder="Suficiente / Normal / Poco" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia3_tiempo" id="materia3_tiempo" placeholder="Suficiente / Normal / Poco" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia4_tiempo" id="materia4_tiempo" placeholder="Suficiente / Normal / Poco" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia5_tiempo" id="materia5_tiempo" placeholder="Suficiente / Normal / Poco" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia6_tiempo" id="materia6_tiempo" placeholder="Suficiente / Normal / Poco" />
+                                        <span class="text-input"></span>
+                                        <input type="text" name="materia7_tiempo" id="materia7_tiempo" placeholder="Suficiente / Normal / Poco" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <br><br>
+                                        <label for="email" class="form-label">Las calificaciones obtenidas al final del semestre anterior ¿Corresponden al esfuerzo realizado?</label>
+                                <input type="text" name="esfuerzo" id="esfuerzo" />
+                                <span class="text-input"> Si / No </span>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <br><br><br><label class="form-label">¿Por qué?</label>
+                                        <input type="text" name="esfuerzo_xq" id="esfuerzo_xq" />
+                                        <span class="text-input"></span>
+                                        
+                                    </div>                              
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">En algún momento del semestre anterior, sentiste que disminuiste tu rendimiento académico</label>
+                                <input type="text" name="rendimiento" id="rendimiento" />
+                                <span class="text-input">Si / No </span>
+                            </div>
+                            <br><p class="desc">Diagnóstico general de la situación académica del estudiante </p>
+                            <div class="form-group">
+                                <label for="ssn" class="form-label">Describa la situación identificada que afecta al estudiante </label>
+                                <input type="text" name="situación_identificada" id="situación_identificada" />
+                                <span class="text-input">Disposición y motivacion al trabajo academico / Algunas materias reprobadas / Está recursando materias / Estudiante condicionado / Deficientes hábitos y técnicas de estudio / Problemas familiares / Escasos recursos económicos  / Otras situaciones ¿Cuáles? </span>
+                                <br><br><button type="submit" class="btn btn-primary">Guardar datos</button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    
+                    
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

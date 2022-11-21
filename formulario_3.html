@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorias UPSLP</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" action="guardarDatos_form3.php">
+                <div>
+                    
+                    <fieldset>
+                        <h3>Expectativas</h3>
+                        <h2>Expectativas del estudiante</h2>
+                        
+                        <br><p class="desc">A continuación, describir las expectativas del estudiante</p>
+                            <div class="form-group">
+                                <label class="form-label">Status del estudiante </label>
+                                <input type="text" name="expectativas" id="expectativas" />
+                                <span class="text-input">Regular  /  Irregular </span>
+                                
+                            </div>
+
+                             <div class="form-group">
+                                <label class="form-label">Los semestres cursados ¿te permiten confirmar tus expectativas sobre la carrera? </label>
+                                <input type="text" name="expectativas_semestres" id="expectativas_semestres" />
+                                <span class="text-input">Si / No</span>
+                                
+                            </div> 
+                            <div class="form-group">
+                                <label class="form-label">¿Por qué? </label>
+                                <input type="text" name="expectativas_semestres_xq" id="expectativas_semestres_xq" />
+                                
+                                
+                            </div> 
+                            <div class="form-group">
+                                <label class="form-label">¿Consideras que existen obstáculos que impidan continuar con tus estudios? </label>
+                                <input type="text" name="hayObstaculos" id="hayObstaculos" />
+                                <span class="text-input">Si / No</span>
+                                
+                                
+                            </div> 
+
+                            <div class="form-group">
+                                <label class="form-label">¿Cuáles? </label>
+                                <input type="text" name="obstaculo1" id="obstaculo1" />
+                                <input type="text" name="obstaculo2" id="obstaculo2" />
+                                <input type="text" name="obstaculo3" id="obstaculo3" />
+                            </div> 
+
+                            <div class="form-group">
+                                <label for="ssn" class="form-label">¿Cuáles son las metas que van configurando tu proyecto de vida? </label>
+                                <input type="text" name="meta_corto" id="meta_corto" />
+                                <span class="text-input">CORTO (durante estos próximos 6 meses)</span>
+                                <input type="text" name="meta_mediano" id="meta_mediano" />
+                                <span class="text-input">MEDIANO (1 año) </span>
+                                <input type="text" name="meta_largo" id="meta_largo" />
+                                <span class="text-input">LARGO (3 años) </span>
+                            </div> <br>
+                            <button type="submit">Guardar datos</button><br><br><br><br>
+                    </fieldset>
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorias UPSLP</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" action="guardarDatos_form2.php">
+                <div>
+                    
+                    <fieldset>
+                        <h3>Semestre en curso</h3>
+                        <h2>Propósitos y líneas de acción para este semestre que inicia</h2>
+                        <br><br><p class="desc">Plan de acción tutorial</p>
+                        <div class="fieldset-content">
+                            <div class="form-group">
+                                <label for="ssn" class="form-label">Que alternativas sugiere el tutelado para entender la problemática académica que enfrenta? (materias atrasadas, reprobadas, bajo aprovechamiento escolar, etc.) </label>
+                                <input type="text" name="alternativas" id="alternativas" />
+                                <span class="text-input">Administración del tiempo / Repasar materias / Participar en círculos de estudio / Asistir a asesorías / Realizar ejercicios sobre los contenidos / Cursar verano / Otras ¿cuáles? </span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ssn" class="form-label">¿Qué recomendaciones sugiere el tutor sobre el diseño de ruta de materias pendientes de aprobar?</label>
+                                <input type="text" name="recomendaciones" id="recomendaciones" />
+                                <span class="text-input">Apoyarse en el mapa curricular de la carrera:</span>
+                                <span class="url">https://upslpedu-my.sharepoint.com/:i:/g/personal/180013_upslp_edu_mx/EapR7EaNBIFJjsi0l2EKd8wBatANxS5U8LO2pkLqCZxcyw?e=6POpHU</span>
+                            </div>
+
+                            <div class="form-group">
+                                <br><label for="ssn" class="form-label">¿Qué talleres o cursos se sugieren para apoyar al estudiante? </label>
+                                <input type="text" name="talleres" id="talleres" />
+                                <span class="text-input">Ciencias / Matemáticas  / Inglés  / Métodos de estudio  / Asesoría asignaturas específicas ¿cuál? / Otros ¿cuáles?</span>
+                                
+                            </div>
+
+                             <div class="form-group">
+                                <label for="ssn" class="form-label">Otro tipo de atención requerida por el estudiante tutelado </label>
+                                <input type="text" name="atencion" id="atencion" />
+                                <span class="text-input">Psicopedagogía   /  Servicios de salud   /  Trabajo social / Becas  / Otros ¿cuáles? </span>
+                                
+                            </div> 
+
+                            <br><br><p class="desc">Establecimiento de compromisos</p>
+                            <div class="form-group">
+                                <label for="ssn" class="form-label">Compromisos con los estudiantes </label>
+                                <input type="text" name="compromisos_estudiante" id="compromisos_estudiante" />
+                                <span class="text-input">Dedicación en el estudio / Cumplir con tareas / Asistir a clases / Entregar trabajos a tiempo / Asistir a asesorias / Integrar círculos de estudio / Otros: ¿cuáles? </span>
+                                
+                            </div>
+
+                             <div class="form-group">
+                                <label for="ssn" class="form-label">Compromisos del profesor al tutor</label>
+                                <input type="text" name="compromisos_profesor" id="compromisos_profesor" />
+                                <span class="text-input">Seguimiento al estudiante  /  Gestionar apoyos  /  Dar asesorías a los estudiantes  /  Brindar información oportuna  / Otros ¿cuáles? </span><br><br>
+                                
+                            </div> 
+                             <button type="submit">Guardar datos</button><br><br><br><br><br>
+                        </div>
+                    </fieldset>
+                   
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
