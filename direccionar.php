@@ -10,7 +10,11 @@
   
   
   // Crear conexión con la base de datos.
-  $conexion = mysqli_connect($server, $db_user, $db_pass, $database)or die("Problemas en la conexion");
+  try {
+    $conexion = mysqli_connect($server, $db_user, $db_pass, $database)or die("Problemas en la conexion");
+  } catch (\Throwable $th) {
+    throw $th;
+  }
 
 
   $queryusuario = mysqli_query($conexion,"SELECT * FROM usuario WHERE usuario ='$usuario' and password = '$password'");
