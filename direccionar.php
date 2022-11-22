@@ -11,7 +11,7 @@
   
   // Crear conexión con la base de datos.
   try {
-    $conexion = mysqli_connect($server, $db_user, $db_pass, $database)or die("Problemas en la conexion");
+    $conexion = mysqli_connect($server, $db_user, $db_pass, $database)or die("Problema en la conexion");
   } catch (\Throwable $th) {
     throw $th;
   }
