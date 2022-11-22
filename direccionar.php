@@ -10,13 +10,7 @@
   
   
   // Crear conexión con la base de datos.
-/*   $conexion = mysqli_connect($server, $db_user, $db_pass, $database)or die("Problemas en la conexion"); */
-  $conexion = new mysqli($server, $db_user, $db_pass, $database);
-
-  if ($mysqli -> connect_errno) {
-    echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-    exit();
-  }
+  $conexion = mysqli_connect($server, $db_user, $db_pass, $database)or die("Problemas en la conexion");
 
   $queryusuario = mysqli_query($conexion,"SELECT * FROM usuario WHERE usuario ='$usuario' and password = '$password'");
   $nr = mysqli_num_rows($queryusuario);

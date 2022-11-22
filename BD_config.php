@@ -1,13 +1,12 @@
 <?php
 	// el servidor al activar la base de datos.
-	/* $server="localhost"; */
-	$server="0.0.0.0";
+	$server="localhost";
 
 	// nombre de username de la base de datos
-	 $db_user = "admin";
+	 $db_user = "root";
 	 
 	// password
-	 $db_pass = "Xnf8IJMr5NNm";
+	 $db_pass = "";
 
 	 // Nombre de la base de datos.
 	$database = "tutoriasbd";
